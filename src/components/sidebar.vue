@@ -16,10 +16,10 @@
       ></sidebar-item>
     </el-menu>
     <div>
-      <router-link to="/user/profile">profile</router-link>
+      <router-link to="/home/profile">profile</router-link>
     </div>
     <div>
-      <router-link to="/user/person">person</router-link>
+      <router-link to="/home/person">person</router-link>
     </div>
   </div>
 </template>

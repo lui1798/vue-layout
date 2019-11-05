@@ -10,12 +10,20 @@ export default new Router({
     {
       path: '/',
       name: 'Layout',
-      component: Layout
+      component: Layout,
+      redirect: '/home',
     },
+
     {
-      path: '/user',
+      path: '/home',
       component: Layout,
       children: [
+        {
+          path: '',
+          name: 'Profile',
+          component: () => import('@/components/user/profile'),
+          meta: { icon: 'warning', title: '个人中心' }
+        },
         {
           path: 'profile',
           name: 'Profile',
