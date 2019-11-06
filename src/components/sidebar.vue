@@ -33,4 +33,13 @@
   height: 100%;
   min-height: 500px;
 }
+.left-sidebar{
+    position:absolute;
+    width:230px;
+    top:50px;
+    left:0px;
+    right:0px;
+    overflow-y:auto;
+    background-color:#545c64;
+}
 </style>
